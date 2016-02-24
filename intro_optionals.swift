@@ -1,5 +1,6 @@
 
-/* OPTIONALS
+/* OPTIONALS - Page 48 : Swift 2 for absolute beginners
+
 If I omit the ? after 'Int' the compiler gives an error
 that the variable cannot be used as it hasn't been initialised
 there is no default value and Swift doesn't like it.
