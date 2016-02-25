@@ -31,7 +31,15 @@ if temperature != nil {
     print ("Sorry we were unable to get the temperature")
 }
 
-/* 2. OPTIONAL BINDING
+/* 2. IMPLICITLY UNWRAPPED OPTIONALS
+If we declare an optional variable and know it will always have a value
+we are giving the program permission to unwrap the optional as we're sure there's a value
+*/
+
+var temperature: String! = "48 degrees" // This is an implicitly unwrapped optional declaration
+var exportTemperature: String = temperature // No need for a !
+
+/* 3. OPTIONAL BINDING
 set a constant to be the temperature optional
 and use it in an if statement, this means we don't need to force unwrap it like the previous code
 Here, the ! after the variable is not needed because the "if let" statement tests it for us.
